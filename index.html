@@ -1,197 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Prostate Cancer Knowledge Check</title>
+  <meta charset="UTF-8">
+  <title>Understanding Testicular Cancer</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      background-color: white;
-      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-      border-radius: 8px;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f3f4f6;
+      color: #1f2937;
+      line-height: 1.6;
     }
+
+    .container {
+      max-width: 900px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    h1, h2, h3, h4 {
+      color: #1e40af;
+    }
+
     h1 {
       text-align: center;
-      color: #0077cc;
+      margin-bottom: 30px;
     }
-    .question {
-      margin-bottom: 1.5rem;
-    }
-    .question h3 {
-      margin-bottom: 0.5rem;
-    }
-    .options label {
-      display: block;
-      margin: 0.25rem 0;
-      position: relative;
-      padding-left: 25px;
-    }
-    .options label.correct::before {
-      content: "\2714";
-      color: green;
-      position: absolute;
-      left: 0;
-    }
-    .options label.incorrect::before {
-      content: "\2716";
-      color: red;
-      position: absolute;
-      left: 0;
-    }
-    #submit {
-      background: #0077cc;
-      color: white;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    #submit:hover {
-      background: #005fa3;
-    }
-    .result {
-      margin-top: 1rem;
-      font-weight: bold;
-    }
-    #counter {
-      margin-bottom: 1.5rem;
-      font-weight: bold;
-      padding: 1rem;
-      background: #e6f2ff;
-      border-left: 5px solid #0077cc;
-      border-radius: 5px;
-      color: #003d66;
-    }
-    #visitorCount {
-      font-size: 0.9rem;
-      color: #666;
-      text-align: center;
-      margin-bottom: 1rem;
-    }
-    #leaderboard {
-      margin-top: 2rem;
-      padding: 1rem;
-      background: #f9f9f9;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    #leaderboard h3 {
-      margin-bottom: 0.5rem;
-    }
-  </style>
 
+    ul {
+      padding-left: 20px;
+    }
+
+    .highlight-box {
+      background: #e0f2fe;
+      padding: 20px;
+      border-left: 5px solid #0284c7;
+      border-radius: 8px;
+      margin: 30px 0;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 0.9em;
+      color: #6b7280;
+      margin-top: 40px;
+    }
+
+    .section {
+      margin-bottom: 30px;
+    }
+
+    .collapsible {
+      background-color: #f1f5f9;
+      cursor: pointer;
+      padding: 12px 18px;
+      border: none;
+      text-align: left;
+      outline: none;
+      font-size: 1.1em;
+      width: 100%;
+      transition: background 0.3s;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .collapsible:hover {
+      background-color: #e2e8f0;
+    }
+
+    .content {
+      padding: 0 18px;
+      display: none;
+      overflow: hidden;
+      border-left: 4px solid #60a5fa;
+      background: #f9fafb;
+      margin-bottom: 20px;
+      border-radius: 0 0 8px 8px;
+    }
+
+    .content.show {
+      display: block;
+      animation: fadeIn 0.3s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+  </style>
 </head>
 <body>
-  <h1>Prostate Cancer Knowledge Check</h1>
-  <div id="visitorCount"></div>
-  <div id="counter">Attempts: 0</div>
-  <form id="quizForm">
-    <!-- Questions omitted for brevity -->
-  </form>
-  <div id="result" class="result"></div>
-  <div id="leaderboard"></div>
+
+  <div class="container">
+    <h1>Testicular Cancer: What Every Man Should Know</h1>
+
+    <div class="section">
+      <p>
+        Cancer begins when cells grow out of control. These abnormal cells can form in almost any part of the body — including the testicles — and can spread elsewhere. Understanding testicular cancer starts with knowing how the testicles function.
+      </p>
+    </div>
+
+    <button class="collapsible">🔍 What Are Testicles?</button>
+    <div class="content">
+      <p>Testicles (or testes) are two small, golf ball-sized organs located inside the scrotum beneath the penis. They serve two key functions:</p>
+      <ul>
+        <li>Producing male hormones like testosterone</li>
+        <li>Creating sperm cells necessary for reproduction</li>
+      </ul>
+      <p>
+        Sperm forms in seminiferous tubules, matures in the <strong>epididymis</strong>, and travels through the <strong>vas deferens</strong> to become part of semen.
+      </p>
+    </div>
+
+    <button class="collapsible">📊 Types of Testicular Cancer</button>
+    <div class="content">
+      <p>
+        The testicles are composed of many cell types, and cancer can develop in almost any of them. Cancers are classified by the cell type they originate from.
+      </p>
+
+      <h3>Germ Cell Tumors (GCTs)</h3>
+      <p>Over 90% of testicular cancers start here. These include:</p>
+      <ul>
+        <li><strong>Seminomas</strong> – Slow-growing, often in men aged 25–45</li>
+        <li><strong>Non-seminomas</strong> – More aggressive, often in younger men</li>
+      </ul>
+
+      <h4>Non-seminomas types:</h4>
+      <ul>
+        <li><strong>Embryonal Carcinoma</strong>: Fast-growing, may raise AFP/HCG</li>
+        <li><strong>Yolk Sac Tumor</strong>: Common in children, raises AFP</li>
+        <li><strong>Choriocarcinoma</strong>: Rare but aggressive, raises HCG</li>
+        <li><strong>Teratomas</strong>: Can appear mature, immature, or mixed</li>
+      </ul>
+    </div>
+
+    <button class="collapsible">🧬 Carcinoma in Situ</button>
+    <div class="content">
+      <p>
+        This is a non-invasive form of testicular cancer found only under a microscope. It may never spread, so many doctors opt for "watchful waiting" instead of immediate treatment.
+      </p>
+    </div>
+
+    <button class="collapsible">🔬 Stromal Tumors</button>
+    <div class="content">
+      <p>
+        These rare tumors develop in hormone-producing tissue:
+      </p>
+      <ul>
+        <li><strong>Leydig Cell Tumors:</strong> Often benign, may produce hormones</li>
+        <li><strong>Sertoli Cell Tumors:</strong> Usually benign, arise in support cells</li>
+      </ul>
+    </div>
+
+    <button class="collapsible">🌍 Secondary Testicular Cancers</button>
+    <div class="content">
+      <p>
+        Cancers from other organs sometimes spread to the testicles. These are called secondary testicular cancers. Examples include:
+      </p>
+      <ul>
+        <li><strong>Lymphoma</strong>: Most common secondary testicular cancer</li>
+        <li><strong>Leukemia</strong>: Especially in boys with acute leukemia</li>
+        <li><strong>Metastatic cancers</strong>: From the lung, prostate, kidney, or skin</li>
+      </ul>
+    </div>
+
+    <div class="highlight-box">
+      <h3>💡 Did You Know?</h3>
+      <p>
+        Testicular cancer is highly treatable — especially when detected early. Monthly self-exams and early reporting of changes can save lives.
+      </p>
+    </div>
+
+    <div class="footer">
+      &copy; 2025 Cancer-Savvy Crew · This information is educational and not a substitute for medical advice. See your healthcare provider for concerns.
+    </div>
+  </div>
 
   <script>
-    const answers = {
-      q1: "c",
-      q2: "b",
-      q3: "c",
-      q4: "a",
-      q5: "a",
-      q6: "a",
-      q7: "c",
-      q8: "a",
-      q9: "b",
-      q10: "b",
-    };
+    const buttons = document.querySelectorAll(".collapsible");
 
-    let attempts = parseInt(localStorage.getItem('attempts')) || 0;
-    let highScore = parseInt(localStorage.getItem('highScore')) || 0;
-    let visits = parseInt(localStorage.getItem('visits')) || 0;
-    visits++;
-    localStorage.setItem('visits', visits);
-
-    document.getElementById("visitorCount").textContent = `👥 You’ve visited this quiz ${visits} ${visits === 1 ? 'time' : 'times'}.`;
-
-    const updateCounter = () => {
-      document.getElementById("counter").textContent = `Attempts: ${attempts} | High Score: ${highScore}`;
-    };
-
-    updateCounter();
-
-    async function submitHighScore(name, score) {
-      const { error } = await supabaseClient
-        .from('quiz_scores')
-        .insert([{ name, score }]);
-      if (error) console.error('Error saving high score:', error.message);
-      else loadLeaderboard();
-    }
-
-    async function loadLeaderboard() {
-      const { data, error } = await supabaseClient
-        .from('quiz_scores')
-        .select('*')
-        .order('score', { ascending: false })
-        .limit(5);
-
-      if (data) {
-        const board = document.getElementById('leaderboard');
-        board.innerHTML = '<h3>🏆 Leaderboard</h3><ol>' +
-          data.map(d => `<li>${d.name} - ${d.score}</li>`).join('') +
-          '</ol>';
-      } else if (error) {
-        console.error('Failed to load leaderboard:', error.message);
-      }
-    }
-
-    loadLeaderboard();
-
-    document.getElementById("submit").addEventListener("click", () => {
-      let score = 0;
-      let total = Object.keys(answers).length;
-
-      document.querySelectorAll('.options label').forEach(label => {
-        label.classList.remove('correct', 'incorrect');
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const content = btn.nextElementSibling;
+        content.classList.toggle("show");
       });
-
-      for (let key in answers) {
-        const correctAnswer = answers[key];
-        const selected = document.querySelector(`input[name=${key}]:checked`);
-        const labels = document.querySelectorAll(`input[name=${key}]`);
-
-        labels.forEach(input => {
-          const label = input.closest('label');
-          if (input.value === correctAnswer) {
-            label.classList.add('correct');
-          } else if (selected && input.checked && input.value !== correctAnswer) {
-            label.classList.add('incorrect');
-          }
-        });
-
-        if (selected && selected.value === correctAnswer) {
-          score++;
-        }
-      }
-
-      attempts++;
-      localStorage.setItem('attempts', attempts);
-      if (score > highScore) {
-        highScore = score;
-        localStorage.setItem('highScore', highScore);
-        const userName = prompt('🎉 New High Score! Enter your name:');
-        if (userName) {
-          submitHighScore(userName, score);
-        }
-      }
-
-      document.getElementById("result").textContent = `You got ${score} out of ${total} correct.`;
-      updateCounter();
     });
   </script>
+
 </body>
 </html>

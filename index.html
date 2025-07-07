@@ -1,195 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Understanding Testicular Cancer</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #f3f4f6;
-      color: #1f2937;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 900px;
-      margin: 50px auto;
-      background: #fff;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
-
-    h1, h2, h3, h4 {
-      color: #1e40af;
-    }
-
-    h1 {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .highlight-box {
-      background: #e0f2fe;
-      padding: 20px;
-      border-left: 5px solid #0284c7;
-      border-radius: 8px;
-      margin: 30px 0;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 0.9em;
-      color: #6b7280;
-      margin-top: 40px;
-    }
-
-    .section {
-      margin-bottom: 30px;
-    }
-
-    .collapsible {
-      background-color: #f1f5f9;
-      cursor: pointer;
-      padding: 12px 18px;
-      border: none;
-      text-align: left;
-      outline: none;
-      font-size: 1.1em;
-      width: 100%;
-      transition: background 0.3s;
-      border-radius: 8px;
-      margin-bottom: 10px;
-    }
-
-    .collapsible:hover {
-      background-color: #e2e8f0;
-    }
-
-    .content {
-      padding: 0 18px;
-      display: none;
-      overflow: hidden;
-      border-left: 4px solid #60a5fa;
-      background: #f9fafb;
-      margin-bottom: 20px;
-      border-radius: 0 0 8px 8px;
-    }
-
-    .content.show {
-      display: block;
-      animation: fadeIn 0.3s ease-in-out;
-    }
-
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-  </style>
+  <meta charset="UTF-8" />
+  <title>Testicular Cancer Quiz</title>
 </head>
-<body>
+<body style="background-color:#f0f2f5; font-family: Arial, sans-serif; padding: 40px; margin:0;">
 
-  <div class="container">
-    <h1>Testicular Cancer: What Every Man Should Know</h1>
+  <div style="background-color:#ffffff; max-width:800px; margin:auto; padding:30px; border-radius:10px; box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    <h2 style="color:#2c3e50; text-align:center;">Testicular Cancer: What Every Man Should Know</h2>
 
-    <div class="section">
-      <p>
-        Cancer begins when cells grow out of control. These abnormal cells can form in almost any part of the body — including the testicles — and can spread elsewhere. Understanding testicular cancer starts with knowing how the testicles function.
-      </p>
+    <!-- Question 1 -->
+    <div class="question" data-correct="15–44 years old" style="margin-bottom:30px;">
+      <p style="font-weight:bold;">1. What is the most common age range for testicular cancer diagnosis?</p>
+      <label><input type="radio" name="q1" value="15–44 years old"> 15–44 years old</label><br>
+      <label><input type="radio" name="q1" value="45–64 years old"> 45–64 years old</label><br>
+      <label><input type="radio" name="q1" value="65+ years"> 65+ years</label><br>
+      <label><input type="radio" name="q1" value="Under 10 years"> Under 10 years</label>
     </div>
 
-    <button class="collapsible">🔍 What Are Testicles?</button>
-    <div class="content">
-      <p>Testicles (or testes) are two small, golf ball-sized organs located inside the scrotum beneath the penis. They serve two key functions:</p>
-      <ul>
-        <li>Producing male hormones like testosterone</li>
-        <li>Creating sperm cells necessary for reproduction</li>
-      </ul>
-      <p>
-        Sperm forms in seminiferous tubules, matures in the <strong>epididymis</strong>, and travels through the <strong>vas deferens</strong> to become part of semen.
-      </p>
+    <!-- Question 2 -->
+    <div class="question" data-correct="Lump or swelling in a testicle" style="margin-bottom:30px;">
+      <p style="font-weight:bold;">2. What is often the first sign of testicular cancer?</p>
+      <label><input type="radio" name="q2" value="Fever"> Fever</label><br>
+      <label><input type="radio" name="q2" value="Lump or swelling in a testicle"> Lump or swelling in a testicle</label><br>
+      <label><input type="radio" name="q2" value="Pain when urinating"> Pain when urinating</label><br>
+      <label><input type="radio" name="q2" value="Persistent cough"> Persistent cough</label>
     </div>
 
-    <button class="collapsible">📊 Types of Testicular Cancer</button>
-    <div class="content">
-      <p>
-        The testicles are composed of many cell types, and cancer can develop in almost any of them. Cancers are classified by the cell type they originate from.
-      </p>
-
-      <h3>Germ Cell Tumors (GCTs)</h3>
-      <p>Over 90% of testicular cancers start here. These include:</p>
-      <ul>
-        <li><strong>Seminomas</strong> – Slow-growing, often in men aged 25–45</li>
-        <li><strong>Non-seminomas</strong> – More aggressive, often in younger men</li>
-      </ul>
-
-      <h4>Non-seminomas types:</h4>
-      <ul>
-        <li><strong>Embryonal Carcinoma</strong>: Fast-growing, may raise AFP/HCG</li>
-        <li><strong>Yolk Sac Tumor</strong>: Common in children, raises AFP</li>
-        <li><strong>Choriocarcinoma</strong>: Rare but aggressive, raises HCG</li>
-        <li><strong>Teratomas</strong>: Can appear mature, immature, or mixed</li>
-      </ul>
+    <!-- Question 3 -->
+    <div class="question" data-correct="Germ cell tumors" style="margin-bottom:30px;">
+      <p style="font-weight:bold;">3. What type of cell causes most testicular cancers?</p>
+      <label><input type="radio" name="q3" value="Leydig cells"> Leydig cells</label><br>
+      <label><input type="radio" name="q3" value="Sertoli cells"> Sertoli cells</label><br>
+      <label><input type="radio" name="q3" value="Germ cell tumors"> Germ cell tumors</label><br>
+      <label><input type="radio" name="q3" value="Nerve cells"> Nerve cells</label>
     </div>
 
-    <button class="collapsible">🧬 Carcinoma in Situ</button>
-    <div class="content">
-      <p>
-        This is a non-invasive form of testicular cancer found only under a microscope. It may never spread, so many doctors opt for "watchful waiting" instead of immediate treatment.
-      </p>
+    <!-- Question 4 -->
+    <div class="question" data-correct="Monthly self-exams" style="margin-bottom:30px;">
+      <p style="font-weight:bold;">4. What is the best way to catch testicular cancer early?</p>
+      <label><input type="radio" name="q4" value="Blood pressure checks"> Blood pressure checks</label><br>
+      <label><input type="radio" name="q4" value="Yearly colonoscopies"> Yearly colonoscopies</label><br>
+      <label><input type="radio" name="q4" value="Monthly self-exams"> Monthly self-exams</label><br>
+      <label><input type="radio" name="q4" value="Hearing tests"> Hearing tests</label>
     </div>
 
-    <button class="collapsible">🔬 Stromal Tumors</button>
-    <div class="content">
-      <p>
-        These rare tumors develop in hormone-producing tissue:
-      </p>
-      <ul>
-        <li><strong>Leydig Cell Tumors:</strong> Often benign, may produce hormones</li>
-        <li><strong>Sertoli Cell Tumors:</strong> Usually benign, arise in support cells</li>
-      </ul>
+    <!-- Question 5 -->
+    <div class="question" data-correct="Highly treatable, especially when caught early" style="margin-bottom:30px;">
+      <p style="font-weight:bold;">5. Which statement is true about testicular cancer?</p>
+      <label><input type="radio" name="q5" value="Usually deadly regardless of stage"> Usually deadly regardless of stage</label><br>
+      <label><input type="radio" name="q5" value="Only affects elderly men"> Only affects elderly men</label><br>
+      <label><input type="radio" name="q5" value="Highly treatable, especially when caught early"> Highly treatable, especially when caught early</label><br>
+      <label><input type="radio" name="q5" value="It’s always painful"> It’s always painful</label>
     </div>
 
-    <button class="collapsible">🌍 Secondary Testicular Cancers</button>
-    <div class="content">
-      <p>
-        Cancers from other organs sometimes spread to the testicles. These are called secondary testicular cancers. Examples include:
-      </p>
-      <ul>
-        <li><strong>Lymphoma</strong>: Most common secondary testicular cancer</li>
-        <li><strong>Leukemia</strong>: Especially in boys with acute leukemia</li>
-        <li><strong>Metastatic cancers</strong>: From the lung, prostate, kidney, or skin</li>
-      </ul>
+    <!-- Question 6 -->
+    <div class="question" data-correct="Undescended testicle" style="margin-bottom:30px;">
+      <p style="font-weight:bold;">6. Which of the following is a known risk factor?</p>
+      <label><input type="radio" name="q6" value="Wearing tight underwear"> Wearing tight underwear</label><br>
+      <label><input type="radio" name="q6" value="Drinking cold water"> Drinking cold water</label><br>
+      <label><input type="radio" name="q6" value="Undescended testicle"> Undescended testicle</label><br>
+      <label><input type="radio" name="q6" value="Frequent urination"> Frequent urination</label>
     </div>
 
-    <div class="highlight-box">
-      <h3>💡 Did You Know?</h3>
-      <p>
-        Testicular cancer is highly treatable — especially when detected early. Monthly self-exams and early reporting of changes can save lives.
-      </p>
+    <!-- Question 7 -->
+    <div class="question" data-correct="Seminoma and non-seminoma" style="margin-bottom:30px;">
+      <p style="font-weight:bold;">7. What are the two main subtypes of germ cell tumors?</p>
+      <label><input type="radio" name="q7" value="Benign and malignant"> Benign and malignant</label><br>
+      <label><input type="radio" name="q7" value="Epithelial and squamous"> Epithelial and squamous</label><br>
+      <label><input type="radio" name="q7" value="Seminoma and non-seminoma"> Seminoma and non-seminoma</label><br>
+      <label><input type="radio" name="q7" value="Ductal and lobular"> Ductal and lobular</label>
     </div>
 
-    <div class="footer">
-      &copy; 2025 Cancer-Savvy Crew · This information is educational and not a substitute for medical advice. See your healthcare provider for concerns.
+    <!-- Question 8 -->
+    <div class="question" data-correct="It may not spread and can be monitored" style="margin-bottom:30px;">
+      <p style="font-weight:bold;">8. What’s unique about carcinoma in situ (CIS)?</p>
+      <label><input type="radio" name="q8" value="It is contagious"> It is contagious</label><br>
+      <label><input type="radio" name="q8" value="It can be cured with antibiotics"> It can be cured with antibiotics</label><br>
+      <label><input type="radio" name="q8" value="It may not spread and can be monitored"> It may not spread and can be monitored</label><br>
+      <label><input type="radio" name="q8" value="It only affects women"> It only affects women</label>
     </div>
+
+    <button onclick="checkAnswers()" style="padding:10px 20px; font-size:16px; background-color:#007bff; color:white; border:none; border-radius:6px; cursor:pointer;">Submit</button>
+
+    <p id="result" style="margin-top:20px; font-size:18px; font-weight:bold;"></p>
   </div>
 
   <script>
-    const buttons = document.querySelectorAll(".collapsible");
+    function checkAnswers() {
+      const questions = document.querySelectorAll(".question");
+      let score = 0;
 
-    buttons.forEach(btn => {
-      btn.addEventListener("click", () => {
-        const content = btn.nextElementSibling;
-        content.classList.toggle("show");
+      questions.forEach(q => {
+        const correctAnswer = q.getAttribute("data-correct");
+        const radios = q.querySelectorAll("input[type='radio']");
+
+        radios.forEach(radio => {
+          const label = radio.parentElement;
+          label.style.backgroundColor = '';
+          label.style.color = '';
+          if (label.querySelector(".icon")) {
+            label.querySelector(".icon").remove();
+          }
+        });
+
+        const selected = q.querySelector("input[type='radio']:checked");
+        if (selected) {
+          const userAnswer = selected.value;
+          const label = selected.parentElement;
+
+          if (userAnswer === correctAnswer) {
+            label.style.backgroundColor = "#e6f9ec";
+            label.style.color = "green";
+            label.innerHTML += ' <span class="icon" style="font-weight:bold;">✅</span>';
+            score++;
+          } else {
+            label.style.backgroundColor = "#fdecea";
+            label.style.color = "red";
+            label.innerHTML += ' <span class="icon" style="font-weight:bold;">❌</span>';
+
+            const correctInput = Array.from(radios).find(r => r.value === correctAnswer);
+            const correctLabel = correctInput.parentElement;
+            correctLabel.style.backgroundColor = "#e6f9ec";
+            correctLabel.style.color = "green";
+            if (!correctLabel.querySelector(".icon")) {
+              correctLabel.innerHTML += ' <span class="icon" style="font-weight:bold;">✅</span>';
+            }
+          }
+        }
       });
-    });
-  </script>
 
+      document.getElementById("result").innerText = `You got ${score} out of ${questions.length} correct.`;
+    }
+  </script>
 </body>
 </html>
